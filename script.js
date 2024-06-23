@@ -31,13 +31,15 @@ async function findTable() {
       const tableNumber = await response.text();
   
       // Display the table number in the result element
-      resultElement.textContent = `You are assigned to Table ${tableNumber}`;
+      resultElement.textContent = `Votre table est : ${tableNumber}`;
       document.getElementById("loading").style.display = "none";
   
     } catch (error) {
       // Handle errors during data fetching
       console.error("Error fetching data:", error);
-      resultElement.textContent = "Error fetching data. Please try again later.";
+    //   resultElement.textContent = "Error fetching data. Please try again later.";
+      resultElement.textContent = "Oups, une erreur est survenue. Essayez encore ou demandez à Salomé / Laurie.";
+    
       document.getElementById("loading").style.display = "none";
     }
   }
