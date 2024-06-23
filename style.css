@@ -10,7 +10,7 @@ body {
 
 body {
     background-image: url('images/background.png'); /* Path to your local image */
-    background-size: cover; /* Ensures the image covers the entire background */
+    background-size: contain; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the image fixed when scrolling */
     background-position: center; /* Centers the image */
