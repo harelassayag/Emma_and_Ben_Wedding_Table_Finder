@@ -10,7 +10,7 @@ async function findTable() {
   
     // Validate input
     if (!firstName || !lastName) {
-      resultElement.textContent = "Please enter both first and last names.";
+      resultElement.textContent = "Veuillez remplir tous les champs.";
       document.getElementById("loading").style.display = "none";
       return;
     }
