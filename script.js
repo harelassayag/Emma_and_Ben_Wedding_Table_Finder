@@ -31,7 +31,7 @@ async function findTable() {
       const tableNumber = await response.text();
   
       // Display the table number in the result element
-      resultElement.textContent = `Votre table est : ${tableNumber}`;
+      resultElement.textContent = `${tableNumber}`;
       document.getElementById("loading").style.display = "none";
   
     } catch (error) {
